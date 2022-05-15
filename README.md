@@ -1,5 +1,5 @@
 # Projeto Avaliativo 2
-## Requisitos da Aplicação:
+## Requisitos da Aplicação
 ● Uma Tela de Login contendo um formulário com campos de email e senha. Os campos
 de email e senha são obrigatórios ( Validar ao disparar o evento de onSubmit). Ao clicar no
 botão de Entrar e passar pela validação, verificar se é email e se a senha possui 6
