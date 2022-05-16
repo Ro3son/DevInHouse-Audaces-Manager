@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,18 +8,18 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class LoginComponent {
 
-  public h1: string = 'Sign In to Audaces'; 
+  public h1: string = 'Sign In to Audaces';
   public h2: string = 'Insira suas credenciais para acessar sua conta';
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
-  public form = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl('')
+  public form = this.fb.group({
+    email: ['', [Validators.required, Validators.pattern(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)]],
+    password: ['', [Validators.required, Validators.minLength(6)]]
   });
-  
+
   public onSubmit() {
     console.log(this.form.value);
   }
-  
+
 }
