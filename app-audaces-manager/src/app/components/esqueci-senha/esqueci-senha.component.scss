@@ -1,0 +1,42 @@
+main {
+    .form {
+        h1 {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        max-width: 25em;
+        width: 100%;
+        margin: 2em auto 2em auto;
+        background-color: whitesmoke;
+        border-radius: 12px;
+        .container-email {
+            height: 100px;
+            width: 80%;
+            label {
+                font-size: 1em;
+                margin: 6px 0 6px 0;
+            }
+            input {
+                outline: none;
+                font-size: 1em;
+                width: 100%;
+                margin: 2px auto 2px auto;
+                padding: 6px;
+                border: 1px solid #000;
+                border-radius: 4px;
+
+                &:hover {
+                    border: 2px solid #000;
+                }
+            }
+        }
+        .container-button {
+            font-size: 1em;
+            width: 20em;
+            margin-bottom: 30px;
+            padding: 6px;
+            border: 2px solid #000;
+            border-radius: 4px;
+        }
+    }
+}
