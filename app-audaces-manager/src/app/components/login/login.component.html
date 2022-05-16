@@ -1,21 +1,18 @@
-<main class="d-flex flex-column h-100 m-2 p-2">
+<main class="h-100 m-2 p-2">
     <h1 class="text-center">{{ h1 }}</h1>
-    <form class="d-flex flex-column justify-content-center align-items-center form" 
-    [formGroup]="form" (ngSubmit)="onSubmit()">
-        <div class="m-4">
-            <h2>{{ h2 }}</h2>
-        </div>
+    <form class="d-flex flex-column justify-content-center align-items-center form" [formGroup]="form"
+        (ngSubmit)="onSubmit()">
+        <h2 class="m-4">{{ h2 }}</h2>
         <div class="container-email-password m-2">
             <label for="email">Informe seu e-mail</label>
-            <input type="email" placeholder="E-mail" formControlName="email"/>
+            <input type="email" placeholder="E-mail" formControlName="email" />
+
             <label for="password">Informe sua senha</label>
             <input type="password" placeholder="Senha" formControlName="password" />
         </div>
-        <div class="container-button">
-            <button type="submit" [disabled]="!form.valid">Entrar</button>
+        <div class="container-button m-2">
+            <button type="submit" routerLink="/senha" [disabled]="!form.valid">Entrar</button>
         </div>
     </form>
-    <div class="text-center">
-        <p>Esquece sua senha?<a href="#"> Redefinir Senha</a></p>
-    </div>
+    <p class="text-center">Esqueceu sua senha?<a href="#"> Redefinir Senha</a></p>
 </main>
