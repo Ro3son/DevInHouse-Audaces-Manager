@@ -9,6 +9,7 @@ import { Validators, FormBuilder } from '@angular/forms';
 export class LoginComponent {
 
   public h1: string = 'Sign In to Audaces';
+
   public h2: string = 'Insira suas credenciais para acessar sua conta';
 
   constructor(private fb: FormBuilder) { }
@@ -19,7 +20,6 @@ export class LoginComponent {
   });
 
   public onSubmit() {
-    console.log(this.form.value);
+    window.localStorage.setItem('Credenciais de usuário', JSON.stringify(this.form.value));
   }
-
 }
