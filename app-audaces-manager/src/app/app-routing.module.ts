@@ -4,7 +4,6 @@ import { LoginComponent } from './components/login/login.component';
 import { EsqueciSenhaComponent } from './components/esqueci-senha/esqueci-senha.component'
 import { DashboardComponent } from './home/dashboard/dashboard.component';
 
-// Path é o caminho (URL) e o componente //
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch:'full' },
   { path: 'login', component: LoginComponent },
