@@ -16,6 +16,8 @@ export class EsqueciSenhaComponent {
 
   public buttonTextContent: string = 'Enviar Recuperação';
 
+  public spanTextContent: string = 'Voltar';
+
   constructor(private fb: FormBuilder) { }
 
   public form = this.fb.group({
