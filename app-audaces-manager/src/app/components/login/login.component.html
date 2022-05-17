@@ -11,7 +11,8 @@
             <input type="password" placeholder="Senha" formControlName="password" />
         </div>
         <div class="container-button m-2">
-            <button type="submit" [disabled]="!form.valid" routerLink="/dashboard">Entrar</button>
+            <button type="submit" [disabled]="!form.valid" (click)="onSubmit()"
+                routerLink="/dashboard">Entrar</button>
         </div>
     </form>
     <p class="text-center">Esqueceu sua senha?<a routerLink="/senha"> Redefinir Senha</a></p>
