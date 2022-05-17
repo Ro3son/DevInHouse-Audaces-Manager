@@ -23,6 +23,7 @@ export class EsqueciSenhaComponent {
   });
 
   public onSubmit() {
-    console.log(this.form.value);
+    window.localStorage.setItem('Senha redefinida', JSON.stringify(this.form.value));
+    window.location.reload();
   }
 }
