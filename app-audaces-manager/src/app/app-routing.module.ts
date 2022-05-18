@@ -1,14 +1,12 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { EsqueciSenhaComponent } from './components/esqueci-senha/esqueci-senha.component'
-import { DashboardComponent } from './home/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch:'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'senha', component: EsqueciSenhaComponent },
-  { path: 'dashboard', component: DashboardComponent }
+
+  { path: '', redirectTo: 'public', pathMatch: 'full' },
+  { path: 'public', loadChildren: () => import('./modules/public/public.module').then(m => m.PublicModule) },
+  { path: 'private', loadChildren: () => import('./modules/private/private.module').then(p => p.PrivateModule) }
+
 ];
 
 @NgModule({
