@@ -1,0 +1,19 @@
+.home {
+    margin: 12px;
+    padding: 12px;
+    height: 640px;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    gap: 0.5em;
+
+    .app-menu {
+        background-color: whitesmoke;
+        width: 25%;
+    }
+
+    .app-dashboard {
+        background-color: whitesmoke;
+        width: 100%;
+    }
+}
