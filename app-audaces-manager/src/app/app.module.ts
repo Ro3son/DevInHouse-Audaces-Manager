@@ -8,9 +8,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { EsqueciSenhaComponent } from './components/esqueci-senha/esqueci-senha.component';
 import { MenuComponent } from './menu/menu.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ListarColecoesComponent } from './components/colecoes/listar-colecoes/listar-colecoes.component';
+import { CadastrarColecaoComponent } from './components/colecoes/cadastrar-colecao/cadastrar-colecao.component';
+import { EditarColecaoComponent } from './components/colecoes/editar-colecao/editar-colecao.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +23,17 @@ import { HomeComponent } from './home/home.component';
     EsqueciSenhaComponent,
     MenuComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    ListarColecoesComponent,
+    CadastrarColecaoComponent,
+    EditarColecaoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
