@@ -7,7 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LoginComponent } from './components/login/login.component';
 import { EsqueciSenhaComponent } from './components/esqueci-senha/esqueci-senha.component';
-import { MenuComponent } from './menu/menu.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 
