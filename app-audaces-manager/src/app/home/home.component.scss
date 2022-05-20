@@ -6,14 +6,22 @@
     margin: auto;
     padding: auto;
     gap: 0.5em;
-
     .app-menu {
         background-color: whitesmoke;
         width: 25%;
     }
-
-    .app-dashboard {
+    .container-welcome {
         background-color: whitesmoke;
         width: 100%;
+        h1 {
+            margin-top: 12px;
+            text-align: center;
+        }
+        img {
+            width: 50%;
+            display: block;
+            margin: auto;
+            padding: 16px;
+        }
     }
 }
