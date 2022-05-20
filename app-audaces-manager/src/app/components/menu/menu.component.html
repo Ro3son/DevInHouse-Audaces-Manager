@@ -6,17 +6,33 @@
                 <span>AudacesManager</span>
             </div>
         </div>
-        <button class="nav-item list-unstyled btn-dashboard" routerLink="/private/dashboard">Dashboard</button>
+        <button class="btn"><a class="nav-link" routerLink="/private/home/dashboard" routerLinkActive="active">Dashboard</a></button>
         <div class="container-ul-li">
-            <ul><span class="span">CADASTROS</span>
-                <li class="nav-item list-unstyled"><button>Coleções</button></li>
-                <li class="nav-item list-unstyled"><button>Modelos</button></li>
+            <ul class=""><span class="span">CADASTROS</span>
+                <li class="nav-item list-unstyled">
+                    <button class="btn">
+                        <a class="nav-link"routerLink="colecoes">Coleções</a>
+                    </button>
+                </li>
+                <li class="nav-item list-unstyled">
+                    <button class="btn">
+                        <a class="nav-link" routerLink="modelos">Modelos</a>
+                    </button>
+                </li>
             </ul>
             <ul><span>SUPORTE</span>
-                <li class="nav-item list-unstyled"><button>Ajuda</button></li>
-                <li class="nav-item list-unstyled"><button>Enviar Comentários</button></li>
+                <li class="nav-item list-unstyled">
+                    <button class="btn">
+                        <a class="nav-link link-dark">Ajuda</a>
+                    </button>
+                </li>
+                <li class="nav-item list-unstyled">
+                    <button class="btn">
+                        <a class="nav-link link-dark">Enviar Comentários</a>
+                    </button>
+                </li>
             </ul>
         </div>
-        <button routerLink="/public/login">Logout</button>
+        <button class="btn"><a class="nav-link" routerLink="/public/login">Logout</a></button>
     </div>
 </nav>
