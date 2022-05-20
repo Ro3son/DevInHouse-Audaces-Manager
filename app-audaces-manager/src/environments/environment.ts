@@ -4,6 +4,5 @@
 
 export const environment = {
   production: false,
-  Modelos_URL: 'http://localhost:3000/modelos',
-  Colecoes_URL: 'http://localhost:3000/colecoes'
+  API_URL: 'http://localhost:3000/'
 };
