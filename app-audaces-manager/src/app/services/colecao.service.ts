@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class ColecaoService {
 
-  private requestURL = environment.Colecoes_URL;
+  private requestURL = `${environment.API_URL}colecoes`;
 
   constructor(private http: HttpClient) { }
 
