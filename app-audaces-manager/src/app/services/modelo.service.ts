@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class ModeloService {
 
-  private requestURL = environment.Modelos_URL;
+  private requestURL = `${environment.API_URL}modelos`;
 
   constructor(private http: HttpClient) { }
 
