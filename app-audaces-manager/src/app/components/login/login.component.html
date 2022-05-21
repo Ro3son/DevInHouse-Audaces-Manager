@@ -1,21 +1,27 @@
 <main class="h-100 m-2 p-2">
     <img src="../../../assets/images/Fill-51.png" />
     <h1 class="text-center">{{ h1 }}</h1>
-    <form class="d-flex flex-column justify-content-center align-items-center form" [formGroup]="form"
+    <form class="d-flex flex-column justify-content-center align-items-center form" 
+        [formGroup]="form"
         (ngSubmit)="onSubmit()">
+        
         <h2 class="m-4">{{ h2 }}</h2>
         <div class="container-email-password m-2">
             <label for="email">Informe seu e-mail</label>
             <input type="email" placeholder="E-mail" formControlName="email" />
-
+            
             <label for="password">Informe sua senha</label>
             <input type="password" placeholder="Senha" formControlName="password" />
         </div>
         <div class="container-button m-2">
-            <button type="submit" [disabled]="!form.valid" 
-                (click)="onSubmit()" routerLink="/private/home">Entrar
+            <button type="submit" 
+            [disabled]="!form.valid" 
+            (click)="onSubmit()" 
+            routerLink="/home/dashboard">Entrar
             </button>
         </div>
     </form>
-    <p class="text-center">Esqueceu sua senha?<a routerLink="/public/senha"> Redefinir Senha</a></p>
+    <p class="text-center">Esqueceu sua senha?
+        <a routerLink="/public/redefinirSenha">Redefinir Senha</a>
+    </p>
 </main>
