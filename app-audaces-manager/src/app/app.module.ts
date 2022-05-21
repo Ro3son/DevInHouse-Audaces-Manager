@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListarColecoesComponent } from './components/colecoes/listar-colecoes/listar-colecoes.component';
 import { CadastrarColecaoComponent } from './components/colecoes/cadastrar-colecao/cadastrar-colecao.component';
 import { EditarColecaoComponent } from './components/colecoes/editar-colecao/editar-colecao.component';
+import { ListarModelosComponent } from './components/modelos/listar-modelos/listar-modelos.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { EditarColecaoComponent } from './components/colecoes/editar-colecao/edi
     ListarColecoesComponent,
     CadastrarColecaoComponent,
     EditarColecaoComponent,
+    ListarModelosComponent,
   ],
   imports: [
     BrowserModule,
