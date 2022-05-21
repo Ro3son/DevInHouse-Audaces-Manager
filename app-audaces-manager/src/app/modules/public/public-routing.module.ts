@@ -6,11 +6,11 @@ import { EsqueciSenhaComponent } from 'src/app/components/esqueci-senha/esqueci-
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: 'senha', component: EsqueciSenhaComponent },
+  { path: 'redefinirSenha', component: EsqueciSenhaComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PublicRoutingModule {}
+export class PublicRoutingModule { }
