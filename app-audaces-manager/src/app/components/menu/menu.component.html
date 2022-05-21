@@ -6,17 +6,19 @@
                 <span>AudacesManager</span>
             </div>
         </div>
-        <button class="btn"><a class="nav-link" routerLink="/home" routerLinkActive="active">Dashboard</a></button>
+        <button class="btn">
+            <a class="nav-link" routerLink="/home/dashboard" routerLinkActive="active">Dashboard</a>
+        </button>
         <div class="container-ul-li">
             <ul class=""><span class="span">CADASTROS</span>
                 <li class="nav-item list-unstyled">
                     <button class="btn">
-                        <a class="nav-link"routerLink="colecoes">Coleções</a>
+                        <a class="nav-link" routerLink="/home/colecoes">Coleções</a>
                     </button>
                 </li>
                 <li class="nav-item list-unstyled">
                     <button class="btn">
-                        <a class="nav-link" routerLink="modelos">Modelos</a>
+                        <a class="nav-link" routerLink="/home/modelos">Modelos</a>
                     </button>
                 </li>
             </ul>
@@ -33,6 +35,8 @@
                 </li>
             </ul>
         </div>
-        <button class="btn"><a class="nav-link" routerLink="/public/login">Logout</a></button>
+        <button class="btn">
+            <a class="nav-link" routerLink="/public/login">Logout</a>
+        </button>
     </div>
 </nav>
