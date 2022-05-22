@@ -4,6 +4,7 @@ import { LoginComponent } from 'src/app/components/login/login.component';
 import { EsqueciSenhaComponent } from 'src/app/components/esqueci-senha/esqueci-senha.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
   { path: 'login', component: LoginComponent },
   { path: 'redefinirSenha', component: EsqueciSenhaComponent },
 ];
