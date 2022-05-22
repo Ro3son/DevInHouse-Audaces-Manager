@@ -1,8 +1,6 @@
 .dashboard {
-    height: 610px;
-    width: 100%;
-    margin: auto;
-    padding: 12px;
+    height: 615.2px;
+    width: 110%;
     gap: 0.5em;
     .container-main {
         background-color: whitesmoke;
@@ -10,15 +8,17 @@
         main {
             .container-cards {
                 .card-1 {
-                  background-color: #1e3264;
-                  color: #ffffff;
+                    background-color: #1e3264;
+                    color: #ffffff;
                 }
+
                 .card-2 {
                     background-color: #477d95;
                     color: #ffffff;
                 }
+
                 .card-3 {
-                   background-color: #509bf5;
+                    background-color: #509bf5;
                 }
             }
         }
