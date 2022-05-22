@@ -5,21 +5,17 @@
     .container-main {
         background-color: whitesmoke;
         width: 100%;
-        main {
-            .container-cards {
-                .card-1 {
-                    background-color: #1e3264;
-                    color: #ffffff;
-                }
-
-                .card-2 {
-                    background-color: #477d95;
-                    color: #ffffff;
-                }
-
-                .card-3 {
-                    background-color: #509bf5;
-                }
+        .container-cards {
+            .card-1 {
+                background-color: #1e3264;
+                color: #ffffff;
+            }
+            .card-2 {
+                background-color: #477d95;
+                color: #ffffff;
+            }
+            .card-3 {
+                background-color: #509bf5;
             }
         }
     }
