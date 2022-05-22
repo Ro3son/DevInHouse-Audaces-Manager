@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Colecoes } from 'src/app/classes/colecoes';
+import { ColecaoService } from 'src/app/services/colecao.service';
 
 @Component({
   selector: 'app-colecoes',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ColecoesComponent implements OnInit {
 
-  constructor() { }
+  public colecoes: Colecoes[] = [];
 
-  ngOnInit(): void {
+  constructor(private ColecaoService: ColecaoService) { }
+
+  ngOnInit() { this.getDataColecoes() }
+
+  public getDataColecoes() {
+    this.ColecaoService.getColecoes().subscribe((dados) => {
+      this.colecoes = dados;
+      console.log(this.colecoes);
+    });
   }
-
 }
