@@ -11,12 +11,12 @@ export class ColecoesComponent implements OnInit {
 
   public colecoes: Colecoes[] = [];
 
-  constructor(private ColecaoService: ColecaoService) { }
+  constructor(private colecaoService: ColecaoService) { }
 
   ngOnInit() { this.getDataColecoes() }
 
   public getDataColecoes() {
-    this.ColecaoService.getColecoes().subscribe((dados) => {
+    this.colecaoService.getColecoes().subscribe((dados) => {
       this.colecoes = dados;
       console.log(this.colecoes);
     });
