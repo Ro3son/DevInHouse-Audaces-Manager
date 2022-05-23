@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { Colecoes } from 'src/app/classes/colecoes';
 import { Modelos } from '../../classes/modelos';
 import { ModeloService } from '../../services/modelo.service';
 
@@ -10,18 +10,17 @@ import { ModeloService } from '../../services/modelo.service';
 })
 export class DashboardComponent implements OnInit {
 
-  @Input() colecao = [{},{}];
+  @Input() colecao: Colecoes[] = [];
 
   public modelo: Modelos[] = [];
 
-  constructor(private ModeloService: ModeloService) { }
+  constructor(private modeloService: ModeloService) { }
 
   ngOnInit() { this.getDataModelos() }
 
   public getDataModelos() {
-    this.ModeloService.getModelos().subscribe((dados) => {
+    this.modeloService.getModelos().subscribe((dados) => {
       this.modelo = dados;
-      console.log(this.modelo);
     });
   }
 }
