@@ -1,11 +1,13 @@
-.dashboard {
-    height: 615.2px;
-    width: 110%;
-    gap: 0.5em;
+main {
+    height: 615.5px;
+    width: 116%;
+    background-color: whitesmoke;
     .container-main {
-        background-color: whitesmoke;
+        height: 615.5px;
         width: 100%;
+        padding: 4px;
         .container-cards {
+            margin-bottom: 3em;
             .card-1 {
                 background-color: #1e3264;
                 color: #ffffff;
