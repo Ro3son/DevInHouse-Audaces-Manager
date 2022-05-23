@@ -3,8 +3,11 @@ nav {
     padding: 10px;
     background-color: whitesmoke;
     .container-fluid {
+        img {
+            width: 80px;
+        }
         .container-svg-span {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         .btn {
          padding: 4px;
