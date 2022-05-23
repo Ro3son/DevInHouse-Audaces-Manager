@@ -1,73 +1,71 @@
-<main class="container-fluid">
-    <div class="d-flex dashboard">
-        <div class="container-main">
-            <h1>Bem vindo, Robson</h1>
-            <p>Acompanhe a visão geral de suas coleções</p>
-            <div class="container-cards d-flex justify-content-between">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body card-1">
-                        <h5 class="card-title">Total de coleções</h5>
-                        <p class="card-text">{{ colecao.length }}</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body card-2">
-                        <h5 class="card-title">Total de Modelos</h5>
-                        <p class="card-text">{{ modelo.length }}</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body card-3">
-                        <h5 class="card-title">Orçamento Médio por coleção</h5>
-                        <p class="card-text">R$ 3500,00</p>
-                    </div>
+<main class="container">
+    <div class="container-main">
+        <h1>Bem vindo, Robson</h1>
+        <p>Acompanhe a visão geral de suas coleções</p>
+        <div class="container-cards d-flex justify-content-between">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body card-1">
+                    <h5 class="card-title">Total de coleções</h5>
+                    <p class="card-text">{{ colecao.length }}</p>
                 </div>
             </div>
-            <div class="container">
-                <h2>Maiores Orçamentos</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">ColeçãoID</th>
-                            <th scope="col">Nome da Coleção</th>
-                            <th scope="col">Orçamento</th>
-                            <th scope="col">Responsável</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <th scope="row">Lorem Ipsum</th>
-                            <th scope="row">R$ 4500,00</th>
-                            <th scope="row">Robson</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <th scope="row">Lorem Ipsum</th>
-                            <th scope="row">R$ 4500,00</th>
-                            <th scope="row">Robson</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <th scope="row">Lorem Ipsum</th>
-                            <th scope="row">R$ 4500,00</th>
-                            <th scope="row">Robson</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <th scope="row">Lorem Ipsum</th>
-                            <th scope="row">R$ 4500,00</th>
-                            <th scope="row">Robson</th>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <th scope="row">Lorem Ipsum</th>
-                            <th scope="row">R$ 4500,00</th>
-                            <th scope="row">Robson</th>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body card-2">
+                    <h5 class="card-title">Total de Modelos</h5>
+                    <p class="card-text">{{ modelo.length }}</p>
+                </div>
             </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body card-3">
+                    <h5 class="card-title">Orçamento Médio por coleção</h5>
+                    <p class="card-text">R$ 3500,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="mb-4">Maiores Orçamentos</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ColeçãoID</th>
+                        <th scope="col">Nome da Coleção</th>
+                        <th scope="col">Orçamento</th>
+                        <th scope="col">Responsável</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <th scope="row">Lorem Ipsum</th>
+                        <th scope="row">R$ 4500,00</th>
+                        <th scope="row">Robson</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <th scope="row">Lorem Ipsum</th>
+                        <th scope="row">R$ 4500,00</th>
+                        <th scope="row">Robson</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <th scope="row">Lorem Ipsum</th>
+                        <th scope="row">R$ 4500,00</th>
+                        <th scope="row">Robson</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <th scope="row">Lorem Ipsum</th>
+                        <th scope="row">R$ 4500,00</th>
+                        <th scope="row">Robson</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <th scope="row">Lorem Ipsum</th>
+                        <th scope="row">R$ 4500,00</th>
+                        <th scope="row">Robson</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </main>
