@@ -15,10 +15,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
+            <tr *ngFor="let colecao of colecoes">
+                <td>{{ colecao.id }}</td>
+                <td>{{ colecao.nome }}</td>
+                <td>{{ colecao.estacao }}</td>
+                <td>{{ colecao.responsavel }}</td>
+            </tr>
         </tbody>
     </table>
 </main>
