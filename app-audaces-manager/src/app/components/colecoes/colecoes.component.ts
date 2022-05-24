@@ -18,7 +18,6 @@ export class ColecoesComponent implements OnInit {
   public getDataColecoes() {
     this.colecaoService.getColecoes().subscribe((dados) => {
       this.colecao = dados;
-      console.log(JSON.stringify(this.colecao));
     });
   }
 }
