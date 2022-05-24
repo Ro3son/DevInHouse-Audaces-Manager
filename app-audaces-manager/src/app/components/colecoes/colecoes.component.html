@@ -1,5 +1,3 @@
-<!-- Sharing data between Parent and child  -->
-<!-- Chamando os componentes filhos -->
-<div>
-    <app-listar-colecoes></app-listar-colecoes>
+<div *ngIf="colecao">
+    <app-listar-colecoes [colecoes]="colecao"></app-listar-colecoes>
 </div>
