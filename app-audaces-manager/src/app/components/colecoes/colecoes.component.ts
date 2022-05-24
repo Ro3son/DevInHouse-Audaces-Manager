@@ -9,7 +9,7 @@ import { ColecaoService } from 'src/app/services/colecao.service';
 })
 export class ColecoesComponent implements OnInit {
 
-  public colecoes: Colecoes[] = [];
+  public colecao: Colecoes[] = [];
 
   constructor(private colecaoService: ColecaoService) { }
 
@@ -17,8 +17,8 @@ export class ColecoesComponent implements OnInit {
 
   public getDataColecoes() {
     this.colecaoService.getColecoes().subscribe((dados) => {
-      this.colecoes = dados;
-      console.log(JSON.stringify(this.colecoes));
+      this.colecao = dados;
+      console.log(JSON.stringify(this.colecao));
     });
   }
 }
