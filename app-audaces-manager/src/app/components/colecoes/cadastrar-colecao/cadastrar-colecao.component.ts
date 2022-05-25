@@ -5,22 +5,31 @@ import { ColecaoService } from 'src/app/services/colecao.service';
 @Component({
   selector: 'app-cadastrar-colecao',
   templateUrl: './cadastrar-colecao.component.html',
-  styleUrls: ['./cadastrar-colecao.component.scss']
+  styleUrls: ['./cadastrar-colecao.component.scss'],
 })
 export class CadastrarColecaoComponent {
 
   public cadastroDeColecao: Colecoes[] = [];
 
-  public cadastraColecao: Colecoes = { id: 0, nome: '', estacao: '', lancamento: 0, responsavel: '' }
+  public cadastraColecao: Colecoes = {
+    id: 0, nome: '', marca: '', estacao: '',
+    orcamento: 0, lancamento: 0, responsavel: '',
+  };
 
   constructor(private colecaoService: ColecaoService) { }
 
-  public onSubmit() { }
-
   public postDataColecoes() {
-    this.colecaoService.postColecoes(this.cadastraColecao).subscribe((dado) => {
-      this.cadastroDeColecao = dado.map((key) => {
-        return new Colecoes(key.id, key.nome, key.estacao, key.lancamento, key.responsavel);
+    this.colecaoService.postColecoes(this.cadastraColecao).subscribe((dados: any) => {
+      this.cadastroDeColecao = dados.map((key: any) => {
+        return new Colecoes(
+          key.id,
+          key.nome,
+          key.marca,
+          key.estacao,
+          key.orcamento,
+          key.lancamento,
+          key.responsavel
+        )
       });
     });
   }
