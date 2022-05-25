@@ -1,32 +1,53 @@
 {
-    "modelos": [
-        {
-            "id": 1,
-            "nome": "Modelo 1",
-            "colecao": 1,
-            "responsavel": "Iolanda"
-        },
-        {
-            "id": 2,
-            "nome": "Modelo 2",
-            "colecao": 1,
-            "responsavel": "Kamila"
-        }
-    ],
-    "colecoes": [
-        {
-            "id": 1,
-            "nome": "Coleção 1",
-            "estacao": "Inverno",
-            "lancamento": "2023",
-            "responsavel": "Graciosa Linda"
-        },
-        {
-            "id": 2,
-            "nome": "Coleção 2",
-            "estacao": "Inverno",
-            "lancamento": "2022",
-            "responsavel": "Monstro Feio"
-        }
-    ]
+  "modelos": [
+    {
+      "id": 1,
+      "nome": "Modelo 1",
+      "colecao": 1,
+      "responsavel": "Iolanda"
+    },
+    {
+      "id": 2,
+      "nome": "Modelo 2",
+      "colecao": 1,
+      "responsavel": "Kamila"
+    }
+  ],
+  "colecoes": [
+    {
+      "id": 1,
+      "nome": "Coleção 1",
+      "estacao": "Inverno",
+      "lancamento": "2023",
+      "responsavel": "Graciosa Linda"
+    },
+    {
+      "id": 2,
+      "nome": "Coleção 2",
+      "estacao": "Inverno",
+      "lancamento": "2022",
+      "responsavel": "Monstro Feio"
+    },
+    {
+      "id": 3,
+      "nome": "colecao 3",
+      "estacao": "inverno",
+      "lancamento": 2022,
+      "responsavel": "robson"
+    },
+    {
+      "id": 4,
+      "nome": "Coleção 4",
+      "estacao": "Inverno",
+      "lancamento": 2022,
+      "responsavel": "Iolanda"
+    },
+    {
+      "id": 5,
+      "nome": "Coleção 5",
+      "estacao": "Verão",
+      "lancamento": 2023,
+      "responsavel": "Cícero"
+    }
+  ]
 }
