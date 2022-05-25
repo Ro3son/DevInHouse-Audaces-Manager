@@ -1,22 +1,32 @@
-<main class="main container">
+<main class="container container-main">
     <h2>Criar Coleção</h2>
-    <div class="d-flex container forms">
-        <form class="d-flex flex-column">
-            <input class="m-2 p-1" type="text" placeholder="Nome da Coleção">
-            <input class="m-2 p-1" type="text" placeholder="Para qual estação?">
-            <input class="m-2 p-1" type="number" placeholder="Qual é o orçamento desta coleção?">
-        </form>
-        <form class="d-flex flex-column">
-            <input class="m-2 p-1" type="text" placeholder="Nome da Coleção">
-            <input class="m-2 p-1" type="text" placeholder="Para qual estação?">
-            <input class="m-2 p-1" type="number" placeholder="Qual é o orçamento desta coleção?">
+    <div class="container container-form">
+        <form class="d-flex justify-content-center form">
+            <div class="d-flex flex-column">
+                <input class="m-2 p-1" type="text" placeholder="Nome da Coleção" 
+                [(ngModel)]="cadastraColecao.nome"   
+                [ngModelOptions]="{standalone: true}">
+                <input class="m-2 p-1" type="text" placeholder="Para qual estação?"
+                    [(ngModel)]="cadastraColecao.estacao"
+                    [ngModelOptions]="{standalone: true}">
+                <input class="m-2 p-1" type="number" placeholder="Qual é o orçamento desta coleção?">
+            </div>
+            <div class="d-flex flex-column">
+                <input class="m-2 p-1" type="text" placeholder="Responsável pela Coleção"
+                    [(ngModel)]="cadastraColecao.responsavel"
+                    [ngModelOptions]="{standalone: true}">
+                <input class="m-2 p-1" type="text" placeholder="Para qual marca você está criando?">
+                <input class="m-2 p-1" type="number" placeholder="Ano de Lançamento?"
+                    [(ngModel)]="cadastraColecao.lancamento"
+                    [ngModelOptions]="{standalone: true}">
+            </div>
         </form>
     </div>
     <div>
         <img src="../../../../assets/images/image 1.png" alt="conectaModa">
     </div>
     <div class="d-flex justify-content-end container-btns">
-        <button class="btn-danger">Cancelar</button>
-        <button class="btn-primary">Salvar</button>
+        <button class="btn-danger" routerLink="/home/colecoes">Cancelar</button>
+        <button class="btn-primary" (click)="postDataColecoes()">Salvar</button>
     </div>
 </main>
