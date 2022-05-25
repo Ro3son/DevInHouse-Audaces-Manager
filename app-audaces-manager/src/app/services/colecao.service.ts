@@ -16,4 +16,7 @@ export class ColecaoService {
   public getColecoes(): Observable<Colecoes[]> {
     return this.http.get<Colecoes[]>(this.requestURL);
   }
+  public postColecoes(data: any): Observable<Colecoes[]> {
+    return this.http.post<Colecoes[]>(this.requestURL, data);
+  }
 }
