@@ -17,35 +17,27 @@
     {
       "id": 1,
       "nome": "Coleção 1",
+      "marca": "x",
       "estacao": "Inverno",
-      "lancamento": "2023",
-      "responsavel": "Graciosa Linda"
+      "orcamento": 2000,
+      "lancamento": 2022,
+      "responsavel": "Robson"
     },
     {
       "id": 2,
       "nome": "Coleção 2",
+      "marca": "Y",
       "estacao": "Inverno",
-      "lancamento": "2022",
-      "responsavel": "Monstro Feio"
-    },
-    {
-      "id": 3,
-      "nome": "colecao 3",
-      "estacao": "inverno",
-      "lancamento": 2022,
-      "responsavel": "robson"
-    },
-    {
-      "id": 4,
-      "nome": "Coleção 4",
-      "estacao": "Inverno",
+      "orcamento": 2500,
       "lancamento": 2022,
       "responsavel": "Iolanda"
     },
     {
-      "id": 5,
-      "nome": "Coleção 5",
+      "id": 3,
+      "nome": "Coleção 3",
+      "marca": "Cicero Modas",
       "estacao": "Verão",
+      "orcamento": 3567,
       "lancamento": 2023,
       "responsavel": "Cícero"
     }
