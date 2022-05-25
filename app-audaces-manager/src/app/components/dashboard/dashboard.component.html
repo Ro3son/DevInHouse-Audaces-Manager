@@ -6,19 +6,19 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body card-1">
                     <h5 class="card-title">Total de coleções</h5>
-                    <p class="card-text">{{ totalColecao.length }}</p>
+                    <p class="card-text">{{ colecoes.length }}</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body card-2">
                     <h5 class="card-title">Total de Modelos</h5>
-                    <p class="card-text">{{ totalModelo.length }}</p>
+                    <p class="card-text">{{ modelos.length }}</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body card-3">
                     <h5 class="card-title">Orçamento Médio por coleção</h5>
-                    <p class="card-text">R$ 3500,00</p>
+                    <p class="card-text">R$ 0000,00</p>
                 </div>
             </div>
         </div>
@@ -34,35 +34,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <th scope="row">Lorem Ipsum</th>
-                        <th scope="row">R$ 4500,00</th>
-                        <th scope="row">Robson</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <th scope="row">Lorem Ipsum</th>
-                        <th scope="row">R$ 4500,00</th>
-                        <th scope="row">Robson</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <th scope="row">Lorem Ipsum</th>
-                        <th scope="row">R$ 4500,00</th>
-                        <th scope="row">Robson</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <th scope="row">Lorem Ipsum</th>
-                        <th scope="row">R$ 4500,00</th>
-                        <th scope="row">Robson</th>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <th scope="row">Lorem Ipsum</th>
-                        <th scope="row">R$ 4500,00</th>
-                        <th scope="row">Robson</th>
+                    <tr *ngFor="let colecao of colecoes">
+                        <th scope="row">{{ colecao.id }}</th>
+                        <th scope="row">{{ colecao.nome }}</th>
+                        <th scope="row"></th>
+                        <th scope="row">{{ colecao.responsavel }}</th>
                     </tr>
                 </tbody>
             </table>
