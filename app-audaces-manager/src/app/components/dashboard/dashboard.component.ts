@@ -11,9 +11,9 @@ import { ModeloService } from '../../services/modelo.service';
 })
 export class DashboardComponent implements OnInit {
 
-  public totalColecao: Colecoes[] = [];
+  public colecoes: Colecoes[] = [];
 
-  public totalModelo: Modelos[] = [];
+  public modelos: Modelos[] = [];
 
   constructor(
     private modeloService: ModeloService,
@@ -21,19 +21,22 @@ export class DashboardComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getDataModelos(), this.getDataColecoes();
+    this.getDataColecoes(),
+    this.getDataModelos();
+  }
+
+  public getDataColecoes() {
+    this.colecaoService.getColecoes().subscribe((dados) => {
+      this.colecoes = dados;
+      console.log(this.colecoes);
+    });
   }
 
   public getDataModelos() {
     this.modeloService.getModelos().subscribe((dados) => {
-      this.totalModelo = dados;
-      console.log(this.totalModelo);
+      this.modelos = dados;
+      console.log(this.modelos);
     });
   }
-  public getDataColecoes() {
-    this.colecaoService.getColecoes().subscribe((dados) => {
-      this.totalColecao = dados;
-      console.log(this.totalColecao);
-    });
-  }
+
 }
