@@ -2,7 +2,7 @@
     <div class="d-flex justify-content-between container-container">
         <h2 class="fs-2">Coleções</h2>
         <button>
-            <a class="nav-link" routerLink="/home/criar">Criar Coleções</a>
+            <a class="nav-link" routerLink="/home/criar">Criar Coleção</a>
         </button>
     </div>
     <table class="table">
@@ -20,6 +20,7 @@
                 <td>{{ colecao.nome }}</td>
                 <td>{{ colecao.estacao }} {{ colecao.lancamento }}</td>
                 <td>{{ colecao.responsavel }}</td>
+                <td><button>Editar</button></td>
             </tr>
         </tbody>
     </table>
