@@ -1,21 +1,17 @@
-.main {
+.container-main {
     h2 {
         padding: 8px;
     }
-    background-color: whitesmoke;
     height: 615.5px;
-    width: 1040px;
-    .forms {
+    width: 900px;
+    .container-form {
         margin: 12px 14px 18px 14px;
         padding: 12px 14px 18px 14px;
-        justify-content: center;
-        align-items: center;
-        gap: 8em;
-        form {
+        .form {
             padding: 12px;
-
+            gap: 8em;
             input {
-                width: 125%;
+                width: 150%;
             }
         }
     }
