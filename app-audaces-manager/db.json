@@ -17,13 +17,15 @@
         {
             "id": 1,
             "nome": "Coleção 1",
-            "estacao": "Inverno 2023",
+            "estacao": "Inverno",
+            "lancamento": "2023",
             "responsavel": "Graciosa Linda"
         },
         {
             "id": 2,
             "nome": "Coleção 2",
-            "estacao": "Inverno 2023",
+            "estacao": "Inverno",
+            "lancamento": "2022",
             "responsavel": "Monstro Feio"
         }
     ]
