@@ -17,9 +17,9 @@
     {
       "id": 1,
       "nome": "Coleção 1",
-      "marca": "x",
+      "marca": "Y",
       "estacao": "Inverno",
-      "orcamento": 3400,
+      "orcamento": 3500,
       "lancamento": 2022,
       "responsavel": "Robson"
     },
@@ -49,6 +49,15 @@
       "orcamento": 1420,
       "lancamento": 2022,
       "responsavel": "Artur"
+    },
+    {
+      "id": 5,
+      "nome": "Coleção 5",
+      "marca": "YyY",
+      "estacao": "Inverno",
+      "orcamento": 2546,
+      "lancamento": 2022,
+      "responsavel": "Carol"
     }
   ]
 }
