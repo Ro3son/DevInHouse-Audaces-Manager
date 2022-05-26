@@ -19,7 +19,7 @@
       "nome": "Coleção 1",
       "marca": "x",
       "estacao": "Inverno",
-      "orcamento": 2000,
+      "orcamento": 3400,
       "lancamento": 2022,
       "responsavel": "Robson"
     },
@@ -40,6 +40,15 @@
       "orcamento": 3567,
       "lancamento": 2023,
       "responsavel": "Cícero"
+    },
+    {
+      "id": 4,
+      "nome": "Coleção 4",
+      "marca": "Kids",
+      "estacao": "Inverno",
+      "orcamento": 1420,
+      "lancamento": 2022,
+      "responsavel": "Artur"
     }
   ]
 }
