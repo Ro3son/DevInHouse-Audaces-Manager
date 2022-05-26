@@ -5,11 +5,14 @@ import { DashboardComponent } from 'src/app/components/dashboard/dashboard.compo
 import { ListarModelosComponent } from 'src/app/components/modelos/listar-modelos/listar-modelos.component';
 import { CadastrarColecaoComponent } from 'src/app/components/colecoes/cadastrar-colecao/cadastrar-colecao.component';
 import { ColecoesComponent } from 'src/app/components/colecoes/colecoes.component';
+import { EditarColecaoComponent } from 'src/app/components/colecoes/editar-colecao/editar-colecao.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'colecoes', component: ColecoesComponent },
-  { path: 'criar', component: CadastrarColecaoComponent },
+  { path: 'cadastrar', component: CadastrarColecaoComponent },
+  { path: 'editar', component: EditarColecaoComponent },
+
   { path: 'modelos', component: ListarModelosComponent },
 ]
 
