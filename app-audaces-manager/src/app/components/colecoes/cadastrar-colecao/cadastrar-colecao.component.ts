@@ -22,13 +22,8 @@ export class CadastrarColecaoComponent {
     this.colecaoService.postColecoes(this.cadastraColecao).subscribe((dados: any) => {
       this.cadastroDeColecao = dados.map((key: any) => {
         return new Colecoes(
-          key.id,
-          key.nome,
-          key.marca,
-          key.estacao,
-          key.orcamento,
-          key.lancamento,
-          key.responsavel
+          key.id, key.nome, key.marca, key.estacao,
+          key.orcamento, key.lancamento, key.responsavel
         )
       });
     });
