@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Colecoes } from '../classes/colecoes';
-import { Observable } from 'rxjs';
+import { Observable, take } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -18,5 +18,8 @@ export class ColecaoService {
   }
   public postColecoes(data: any): Observable<Colecoes[]> {
     return this.http.post<Colecoes[]>(this.requestURL, data);
+  }
+  public putColecoes(data: Colecoes): Observable<Colecoes[]> {
+    return this.http.put<Colecoes[]>(`${this.requestURL}/1`, data);
   }
 }
