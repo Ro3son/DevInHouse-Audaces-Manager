@@ -17,9 +17,15 @@ export class EditarColecaoComponent implements OnInit {
     orcamento: 0, lancamento: 0, responsavel: '',
   };
 
-  constructor(private colecaoService: ColecaoService, private route: ActivatedRoute) { }
+  constructor(
+    private colecaoService: ColecaoService,
+    private route: ActivatedRoute
+  ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    const colecao_id = this.route.snapshot.paramMap.get('colecaoId');
+    console.log(colecao_id);
+   }
 
   public editColecao() {
     this.colecaoService.putColecoes(this.editaColecao).subscribe(() => {
