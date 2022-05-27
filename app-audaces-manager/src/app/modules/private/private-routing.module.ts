@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'colecoes', component: ColecoesComponent },
   { path: 'cadastrar', component: CadastrarColecaoComponent },
-  { path: 'editar', component: EditarColecaoComponent },
+  { path: 'colecoes/:colecaoId', component: EditarColecaoComponent },
 
   { path: 'modelos', component: ListarModelosComponent },
 ]
