@@ -20,7 +20,7 @@
                 <td>{{ colecao.nome }}</td>
                 <td>{{ colecao.estacao }} {{ colecao.lancamento }}</td>
                 <td>{{ colecao.responsavel }}</td>
-                <td><button><a routerLink="/home/editar">Editar</a></button></td>
+                <td><button><a [routerLink]="['/home/colecoes', colecao.id]">Editar</a></button></td>
             </tr>
         </tbody>
     </table>
