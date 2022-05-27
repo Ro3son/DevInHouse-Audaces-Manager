@@ -28,14 +28,12 @@ export class DashboardComponent implements OnInit {
   public getDataColecoes() {
     this.colecaoService.getColecoes().subscribe((dados) => {
       this.colecoes = dados;
-      console.log(this.colecoes);
     });
   }
 
   public getDataModelos() {
     this.modeloService.getModelos().subscribe((dados) => {
       this.modelos = dados;
-      console.log(this.modelos);
     });
   }
 
