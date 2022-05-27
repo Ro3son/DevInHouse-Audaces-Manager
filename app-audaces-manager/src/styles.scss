@@ -1,15 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/SCSS/menu";
+@import "./assets/SCSS/home";
+@import "./assets/SCSS/dashboard";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-app-editar-colecao {
-  background-color: whitesmoke;
-  width: 100%;
+
+app-dashboard {
+  width: 73.1%;
   height: 100%;
-//   main {
-//       width: 100%;
-//   }
+}
+
+app-editar-colecao {
+  width: 73.1%;
+  height: 100%;
 }
