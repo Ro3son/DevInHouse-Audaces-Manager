@@ -20,6 +20,6 @@ export class ColecaoService {
     return this.http.post<Colecoes[]>(this.requestURL, data);
   }
   public putColecoes(data: Colecoes): Observable<Colecoes[]> {
-    return this.http.put<Colecoes[]>(`${this.requestURL}/1`, data);
+      return this.http.put<Colecoes[]>(`${this.requestURL}/${data.id}`, data.id);
   }
 }
