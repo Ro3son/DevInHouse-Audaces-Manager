@@ -4,18 +4,22 @@ main {
         margin: auto;
     }
     .form {
-        svg {
-            cursor: pointer;
-        }
-        h1 {
-            font-size: 1.4em;
-            font-weight: bold;
-        }
         max-width: 25em;
         width: 100%;
         margin: 2em auto 2em auto;
         background-color: whitesmoke;
         border-radius: 12px;
+        .svg-h1 {
+            .svg {
+                svg {
+                    cursor: pointer;
+                }
+            }
+            h1 {
+                font-size: 1.4em;
+                font-weight: bold;
+            }
+        }
         .container-email {
             height: 100px;
             width: 80%;
@@ -37,21 +41,6 @@ main {
                 &:hover {
                     border: 2px solid #000;
                 }
-            }
-        }
-        .btn-back {
-            margin: 1em;
-            padding: auto;
-            background-color: transparent;
-            border: none;
-            font-size: 1em;
-
-            svg {
-                margin-right: 8px;
-            }
-
-            span {
-                font-size: 1.2em;
             }
         }
         .container-button {
