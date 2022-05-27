@@ -1,0 +1,21 @@
+main {
+    margin: 20px 20px 0 20px;
+    padding: 12px;
+    .container {
+        padding: 4px;
+        .container-cards {
+            margin-bottom: 3em;
+            .card-1 {
+                background-color: #1e3264;
+                color: #ffffff;
+            }
+            .card-2 {
+                background-color: #477d95;
+                color: #ffffff;
+            }
+            .card-3 {
+                background-color: #509bf5;
+            }
+        }
+    }
+}
