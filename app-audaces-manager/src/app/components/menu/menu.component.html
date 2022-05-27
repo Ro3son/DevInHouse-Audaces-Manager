@@ -1,42 +1,46 @@
 <nav class="nav d-flex flex-column">
-    <div class="container-fluid">
-        <div class="d-flex flex-column justify-content-center align-items-center container-svg-span">
-            <img src="../../../assets/images/isa 1.png" />
-            <div>
-                <span class="fs-4">AudacesManager</span>
+    <div class="container">
+        <div class="container mb-4">
+            <div class="mb-2 mt-3 img">
+                <img src="../../../assets/images/isa 1.png" />
+            </div>
+            <div class="span">
+                <span class="text">AudacesManager</span>
             </div>
         </div>
-        <button class="mb-2">
-            <a class="nav-link" routerLink="/home/dashboard" routerLinkActive="active">Dashboard</a>
-        </button>
+        <a class="nav-link dashboard" routerLink="/home/dashboard" routerLinkActive="active">
+            <span>Dashboard</span>
+        </a>
         <div class="container-ul-li">
-            <ul class=""><span class="span">CADASTROS</span>
+            <ul>
+                <span class="fw-bold">CADASTROS</span>
                 <li class="nav-item list-unstyled">
-                    <button>
-                        <a class="nav-link" routerLink="/home/colecoes">Coleções</a>
-                    </button>
+                    <a class="nav-link item-link" routerLink="/home/colecoes">
+                        <span>Coleções</span>
+                    </a>
                 </li>
                 <li class="nav-item list-unstyled">
-                    <button>
-                        <a class="nav-link" routerLink="/home/modelos">Modelos</a>
-                    </button>
+                    <a class="nav-link item-link" routerLink="/home/modelos">
+                        <span>Modelos</span>
+                    </a>
                 </li>
             </ul>
-            <ul><span>SUPORTE</span>
+            <ul>
+                <span class="fw-bold">SUPORTE</span>
                 <li class="nav-item list-unstyled">
-                    <button>
-                        <a class="nav-link link-dark">Ajuda</a>
-                    </button>
+                    <a class="nav-link link-dark">
+                        <span>Ajuda</span>
+                    </a>
                 </li>
                 <li class="nav-item list-unstyled">
-                    <button>
-                        <a class="nav-link link-dark">Enviar Comentários</a>
-                    </button>
+                    <a class="nav-link link-dark">
+                        <span>Enviar Comentários</span>
+                    </a>
                 </li>
             </ul>
         </div>
-        <button>
-            <a class="nav-link" routerLink="/public/login">Logout</a>
-        </button>
+        <a class="nav-link logout" routerLink="/public/login">
+            <span>Log out</span>
+        </a>
     </div>
 </nav>
