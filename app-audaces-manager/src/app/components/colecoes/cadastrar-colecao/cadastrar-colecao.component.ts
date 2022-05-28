@@ -19,7 +19,7 @@ export class CadastrarColecaoComponent {
   constructor(private colecaoService: ColecaoService) { }
 
   public postDataColecoes() {
-    this.colecaoService.postColecoes(this.cadastraColecao).subscribe((dados: any) => {
+    this.colecaoService.postColecoes(this.cadastraColecao).subscribe((dados) => {
       this.cadastroDeColecao = dados.map((key: any) => {
         return new Colecoes(
           key.id, key.nome, key.marca, key.estacao,
