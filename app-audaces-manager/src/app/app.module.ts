@@ -17,6 +17,10 @@ import { ColecoesComponent } from './components/colecoes/colecoes.component';
 import { ListarColecoesComponent } from './components/colecoes/listar-colecoes/listar-colecoes.component';
 import { CadastrarColecaoComponent } from './components/colecoes/cadastrar-colecao/cadastrar-colecao.component';
 import { EditarColecaoComponent } from './components/colecoes/editar-colecao/editar-colecao.component';
+import { ModelosComponent } from './components/modelos/modelos.component';
+import { ListarModelosComponent } from './components/modelos/listar-modelos/listar-modelos.component';
+import { CadastrarModeloComponent } from './components/modelos/cadastrar-modelo/cadastrar-modelo.component';
+import { EditarModeloComponent } from './components/modelos/editar-modelo/editar-modelo.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,10 @@ import { EditarColecaoComponent } from './components/colecoes/editar-colecao/edi
     ListarColecoesComponent,
     CadastrarColecaoComponent,
     EditarColecaoComponent,
+    ModelosComponent,
+    ListarModelosComponent,
+    CadastrarModeloComponent,
+    EditarModeloComponent
   
   ],
   imports: [
