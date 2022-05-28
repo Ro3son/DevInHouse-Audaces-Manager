@@ -23,13 +23,34 @@ export class EditarColecaoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    const colecao_id = this.route.snapshot.paramMap.get('colecaoId');
-    console.log(colecao_id);
-   }
+    const colecao_id = this.route.snapshot.paramMap;
+    const idFromRoute = Number(colecao_id.get('colecaoId'));
+    const colecaoId = this.colecaoService.getId(idFromRoute).subscribe(() => {
+      console.log(idFromRoute);
+      console.log(colecaoId);
+    });
+  }
 
   public editColecao() {
-    this.colecaoService.putColecoes(this.editaColecao).subscribe(() => {
-      alert('Coleção Editada');
-    });
+    if (this.editaColecao) {
+      console.log(this.editaColecao);
+    }
+    let colecoes = (this.editaColecao.id) ?
+      this.colecaoService.putColecoes(this.editaColecao).subscribe((dados) => {
+        this.edicaoDecolecoes = dados.map((key) => {
+          return new Colecoes(
+            key.id, key.nome, key.marca, key.estacao,
+            key.orcamento, key.lancamento, key.responsavel
+          )
+        })
+      }) : alert('Coleção Alterada');
+      // this.colecaoService.postColecoes(this.editaColecao).subscribe((dados) => {
+      //   this.edicaoDecolecoes = dados.map((key) => {
+      //     return new Colecoes(
+      //       key.id, key.nome, key.marca, key.estacao,
+      //       key.orcamento, key.lancamento, key.responsavel
+      //     )
+      //   });
+      // });
   }
 }
