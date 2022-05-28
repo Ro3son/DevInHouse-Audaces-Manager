@@ -1,7 +1,7 @@
-<main>
-    <div class="container">
+<main class="container main-dashboard">
+    <div class="container container-dashboard">
         <h1>Bem vindo, Robson</h1>
-        <p class="mb-3">Acompanhe a visão geral de suas coleções</p>
+        <p class="mb-2">Acompanhe a visão geral de suas coleções</p>
         <div class="d-flex justify-content-between container-cards">
             <div class="card" style="width: 18rem;">
                 <div class="card-body card-1">
@@ -24,21 +24,21 @@
         </div>
         <div class="container">
             <h2 class="mb-4">Maiores Orçamentos</h2>
-            <table class="table">
+            <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">ColeçãoID</th>
-                        <th scope="col">Nome da Coleção</th>
-                        <th scope="col">Orçamento</th>
-                        <th scope="col">Responsável</th>
+                        <th>ColeçãoID</th>
+                        <th>Nome da Coleção</th>
+                        <th>Orçamento</th>
+                        <th>Responsável</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let colecao of colecoes">
-                        <th scope="row">{{ colecao.id }}</th>
-                        <th scope="row">{{ colecao.nome }}</th>
-                        <th scope="row">R$ {{ colecao.orcamento }}</th>
-                        <th scope="row">{{ colecao.responsavel }}</th>
+                        <td>{{ colecao.id }}</td>
+                        <td>{{ colecao.nome }}</td>
+                        <td>R$ {{ colecao.orcamento }}</td>
+                        <td>{{ colecao.responsavel }}</td>
                     </tr>
                 </tbody>
             </table>
