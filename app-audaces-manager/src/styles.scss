@@ -1,6 +1,9 @@
 @import "./assets/SCSS/menu";
 @import "./assets/SCSS/home";
 @import "./assets/SCSS/dashboard";
+@import "./assets/SCSS/listar-colecoes";
+@import "./assets/SCSS/cadastrar-colecao";
+@import "./assets/SCSS/editar-colecao";
 
 * {
   box-sizing: border-box;
@@ -9,6 +12,11 @@
 }
 
 app-dashboard {
+  width: 73.1%;
+  height: 100%;
+}
+
+app-cadastrar-colecao {
   width: 73.1%;
   height: 100%;
 }
