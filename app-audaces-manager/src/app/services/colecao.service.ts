@@ -16,8 +16,11 @@ export class ColecaoService {
   public getColecoes(): Observable<Colecoes[]> {
     return this.http.get<Colecoes[]>(this.requestURL);
   }
-  public postColecoes(data: any): Observable<Colecoes[]> {
+  public postColecoes(data: Colecoes): Observable<Colecoes[]> {
     return this.http.post<Colecoes[]>(this.requestURL, data);
+  }
+  public getId(id: number): Observable<Colecoes[]> {
+    return this.http.get<Colecoes[]>(`${this.requestURL}/${id}`);
   }
   public putColecoes(data: Colecoes): Observable<Colecoes[]> {
       return this.http.put<Colecoes[]>(`${this.requestURL}/${data.id}`, data.id);
