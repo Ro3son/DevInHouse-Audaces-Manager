@@ -1,36 +1,36 @@
-<main>
+<main class="container main-editar-colecao">
     <h2>Editar Coleção</h2>
-    <div>
-        <form>
-            <div>
-                <input type="text" placeholder="Nome da coleção"
+    <div class="container container-form">
+        <form class="d-flex form">
+            <div class="d-flex flex-column">
+                <input class="m-2 p-1" type="text" placeholder="Nome da coleção"
                 [(ngModel)]="editaColecao.nome"
                 [ngModelOptions]="{standalone: true}">
-                <input type="text" placeholder="Para qual estação?"
+                <input class="m-2 p-1" type="text" placeholder="Para qual estação?"
                 [(ngModel)]="editaColecao.estacao"
                 [ngModelOptions]="{standalone: true}">
-                <input type="number" placeholder="Qual é o orçamento desta coleção?"
+                <input class="m-2 p-1" type="number" placeholder="Qual é o orçamento desta coleção?"
                 [(ngModel)]="editaColecao.orcamento"
                 [ngModelOptions]="{standalone: true}">
             </div>
-            <div>
-                <input type="text" placeholder="Responsável pela coleção"
+            <div class="d-flex flex-column">
+                <input class="m-2 p-1" type="text" placeholder="Responsável pela coleção"
                 [(ngModel)]="editaColecao.responsavel"
                 [ngModelOptions]="{standalone: true}">
-                <input type="text" placeholder="Para qual marca você está criando?"
+                <input class="m-2 p-1" type="text" placeholder="Para qual marca você está criando?"
                 [(ngModel)]="editaColecao.marca"
                 [ngModelOptions]="{standalone: true}">
-                <input type="number" placeholder="Ano de Lançamento"
+                <input class="m-2 p-1" type="number" placeholder="Ano de Lançamento"
                 [(ngModel)]="editaColecao.lancamento"
                 [ngModelOptions]="{standalone: true}">
             </div>
         </form>
-        <div>
-            <img src="../../../../assets/images/image 1.png">
+        <div class="container-img">
+            <img src="../../../../assets/images/image 1.png" alt="conectaModa">
         </div>
-        <div>
-            <button routerLink="/home/colecoes">Cancelar</button>
-            <button type="submit" (click)="editColecao()">Atualizar</button>
+        <div class="d-flex justify-content-end container-btns">
+            <button class="btn-danger" routerLink="/home/colecoes">Cancelar</button>
+            <button class="btn-primary" type="submit" (click)="editColecao()">Atualizar</button>
         </div>
     </div>
 </main>
