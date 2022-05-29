@@ -16,4 +16,7 @@ export class ModeloService {
   public getModelos(): Observable<Modelos[]> {
     return this.http.get<Modelos[]>(this.requestURL);
   }
+  public postModelos(data: Modelos): Observable<Modelos[]> {
+    return this.http.post<Modelos[]>(this.requestURL, data);
+  }
 }
