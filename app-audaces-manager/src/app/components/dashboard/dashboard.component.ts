@@ -22,7 +22,8 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.getDataColecoes(),
-    this.getDataModelos();
+    this.getDataModelos(),
+    this.mediaOrcamento()
   }
 
   public getDataColecoes() {
@@ -35,6 +36,12 @@ export class DashboardComponent implements OnInit {
     this.modeloService.getModelos().subscribe((dados) => {
       this.modelos = dados;
     });
+  }
+
+  public resultado: any;
+
+  public mediaOrcamento() {
+   
   }
 
 }
