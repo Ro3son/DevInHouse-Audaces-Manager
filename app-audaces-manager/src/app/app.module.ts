@@ -21,6 +21,7 @@ import { ModelosComponent } from './components/modelos/modelos.component';
 import { ListarModelosComponent } from './components/modelos/listar-modelos/listar-modelos.component';
 import { CadastrarModeloComponent } from './components/modelos/cadastrar-modelo/cadastrar-modelo.component';
 import { EditarModeloComponent } from './components/modelos/editar-modelo/editar-modelo.component';
+import { OrderPipe } from './components/pipes/order.pipe';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EditarModeloComponent } from './components/modelos/editar-modelo/editar
     ModelosComponent,
     ListarModelosComponent,
     CadastrarModeloComponent,
-    EditarModeloComponent
+    EditarModeloComponent,
+    OrderPipe
   
   ],
   imports: [
