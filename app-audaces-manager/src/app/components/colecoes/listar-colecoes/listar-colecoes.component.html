@@ -15,12 +15,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let colecao of colecoes">
+            <tr *ngFor="let colecao of colecoes" [routerLink]="['/home/colecoes', colecao.id]">
                 <td>{{ colecao.id }}</td>
                 <td>{{ colecao.nome }}</td>
                 <td>{{ colecao.estacao }} {{ colecao.lancamento }}</td>
                 <td>{{ colecao.responsavel }}</td>
-                <td><button><a [routerLink]="['/home/colecoes', colecao.id]">Editar</a></button></td>
             </tr>
         </tbody>
     </table>
