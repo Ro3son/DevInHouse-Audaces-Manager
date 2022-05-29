@@ -5,6 +5,7 @@
 @import "./assets/SCSS/cadastrar-colecao";
 @import "./assets/SCSS/editar-colecao";
 @import "./assets/SCSS/listar-modelos";
+@import "./assets/SCSS/cadastrar-modelo";
 
 * {
   box-sizing: border-box;
@@ -28,6 +29,11 @@ app-editar-colecao {
 }
 
 app-listar-modelos {
+  width: 73.1%;
+  height: 100%;
+}
+
+app-cadastrar-modelo {
   width: 73.1%;
   height: 100%;
 }
