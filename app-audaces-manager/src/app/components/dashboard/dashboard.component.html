@@ -18,7 +18,7 @@
             <div class="card" style="width: 18rem;">
                 <div class="card-body card-3">
                     <h5 class="card-title">Orçamento Médio por coleção</h5>
-                    <p class="card-text">R$ 0000,00</p>
+                    <p class="card-text">R$ {{ resultado }}</p>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                     <tr *ngFor="let colecao of colecoes">
                         <td>{{ colecao.id }}</td>
                         <td>{{ colecao.nome }}</td>
-                        <td>R$ {{ colecao.orcamento }}</td>
+                        <td>R$ <span id="soma">{{ colecao.orcamento }}</span></td>
                         <td>{{ colecao.responsavel }}</td>
                     </tr>
                 </tbody>
