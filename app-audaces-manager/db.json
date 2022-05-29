@@ -3,13 +3,13 @@
     {
       "id": 1,
       "nome": "Modelo 1",
-      "colecao": 1,
+      "colecao": "Colecão 1",
       "responsavel": "Iolanda"
     },
     {
       "id": 2,
       "nome": "Modelo 2",
-      "colecao": 1,
+      "colecao": "Colecão 2",
       "responsavel": "Kamila"
     }
   ],
