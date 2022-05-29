@@ -3,10 +3,12 @@
     <form class="d-flex justify-content-center">
         <div class="m-2 p-2 w-50">
             <div class="p-2">
-                <input class="w-75" type="text" placeholder="Nome do Modelo">
+                <input class="w-75 input-model" type="text" placeholder="Nome do Modelo"
+                [(ngModel)]="cadastraModelo.nome"
+                [ngModelOptions]="{standalone: true}">
             </div>
             <div class="p-2">
-                <input class="w-75" type="text" placeholder="Tipo do Modelo">
+                <input class="w-75 input-model" type="text" placeholder="Tipo do Modelo">
                 <select>
                     <option></option>
                     <option value="bermuda">bermuda</option>
@@ -30,10 +32,14 @@
         </div>
         <div class="m-2 p-2 w-50">
             <div class="p-2">
-                <input class="w-75" type="text" placeholder="Responsável pelo Modelo">
+                <input class="w-75 input-model" type="text" placeholder="Responsável pelo Modelo"
+                [(ngModel)]="cadastraModelo.responsavel"
+                [ngModelOptions]="{standalone: true}">
             </div>
             <div class="p-2">
-                <input class="w-75" type="text" placeholder="Selecionar Coleção">
+                <input class="w-75 input-model" type="text" placeholder="Selecionar Coleção"
+                [(ngModel)]="cadastraModelo.colecao"
+                [ngModelOptions]="{standalone: true}">
                 <select>
                     <option></option>
                     <option value="bermuda">bermuda</option>
@@ -58,6 +64,6 @@
     </form>
     <div class="d-flex justify-content-end container-btns">
         <button class="btn-danger" routerLink="/home/modelos">Cancelar</button>
-        <button class="btn-primary">Salvar</button>
+        <button class="btn-primary" (click)="postDataModelos()">Salvar</button>
     </div>
 </main>
