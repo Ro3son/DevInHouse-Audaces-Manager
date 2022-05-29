@@ -7,13 +7,19 @@
     form {
         height: 400px;
         padding: 12px;
-        margin: 12px;
-        gap: 1em
-        input {
+        margin: 12px 12px 12px 80px;
+        gap: 0.5em;
+        .input-model {
             width: 100%;
+        }
+        select {
+          margin-left: -94px;
+          background-color: transparent;
+          border: none;
         }
     }
     .container-btns {
+        margin-right: 20px;
         padding: 8px;
         gap: 1em;
         button {
