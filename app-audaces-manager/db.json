@@ -11,6 +11,24 @@
       "nome": "Modelo 2",
       "colecao": "Colecão 2",
       "responsavel": "Kamila"
+    },
+    {
+      "id": 3,
+      "nome": "Modelo 3",
+      "colecao": "Bermuda",
+      "responsavel": "Braulina"
+    },
+    {
+      "id": 4,
+      "nome": "Modelo 4",
+      "colecao": "Coleção 4",
+      "responsavel": "Karine"
+    },
+    {
+      "id": 5,
+      "nome": "Modelo 5",
+      "colecao": "Coleção 5",
+      "responsavel": "Robson"
     }
   ],
   "colecoes": [
