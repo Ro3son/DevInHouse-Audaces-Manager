@@ -17,6 +17,9 @@
           background-color: transparent;
           border: none;
         }
+        .select-2 {
+            margin-left: -99px;
+        }
     }
     .container-btns {
         margin-right: 20px;
@@ -31,7 +34,11 @@
             padding: 6px;
         }
         .btn-danger {
+            margin-right: 630px;
             background-color: tomato;
+            color: #ffff;
+        }
+        .btn-secondary {
             color: #ffff;
         }
         .btn-primary {
