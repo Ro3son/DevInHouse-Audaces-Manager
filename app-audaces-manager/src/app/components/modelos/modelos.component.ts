@@ -18,7 +18,6 @@ export class ModelosComponent implements OnInit {
   public getDataModelos() {
     this.modeloService.getModelos().subscribe((dados) => {
       this.modelo = dados;
-      console.log(this.modelo);
     });
   }
 
