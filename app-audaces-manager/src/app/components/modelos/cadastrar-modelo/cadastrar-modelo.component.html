@@ -1,1 +1,63 @@
-<p>cadastrar-modelo works!</p>
+<main class="container main-cadastrar-modelo">
+    <h2>Criar Modelo</h2>
+    <form class="d-flex justify-content-center">
+        <div class="m-2 p-2 w-50">
+            <div class="p-2">
+                <input class="w-75" type="text" placeholder="Nome do Modelo">
+            </div>
+            <div class="p-2">
+                <input class="w-75" type="text" placeholder="Tipo do Modelo">
+                <select>
+                    <option></option>
+                    <option value="bermuda">bermuda</option>
+                    <option value="biquini">biquíni</option>
+                    <option value="bolsa">bolsa</option>
+                    <option value="bone">boné</option>
+                    <option value="calca">calça</option>
+                    <option value="calcado">calçados</option>
+                    <option value="camisa">camisa</option>
+                    <option value="chapeu">chapéu</option>
+                    <option value="saia">saia</option>
+                </select>
+            </div>
+            <div class="p-2">
+                <p>Possui bordado?</p>
+                <input type="radio">
+                <label class="m-1" for="yes">Sim</label>
+                <input type="radio">
+                <label class="m-1" for="no">Não</label>
+            </div>
+        </div>
+        <div class="m-2 p-2 w-50">
+            <div class="p-2">
+                <input class="w-75" type="text" placeholder="Responsável pelo Modelo">
+            </div>
+            <div class="p-2">
+                <input class="w-75" type="text" placeholder="Selecionar Coleção">
+                <select>
+                    <option></option>
+                    <option value="bermuda">bermuda</option>
+                    <option value="biquini">biquíni</option>
+                    <option value="bolsa">bolsa</option>
+                    <option value="bone">boné</option>
+                    <option value="calca">calça</option>
+                    <option value="calcado">calçados</option>
+                    <option value="camisa">camisa</option>
+                    <option value="chapeu">chapéu</option>
+                    <option value="saia">saia</option>
+                </select>
+            </div>
+            <div class="p-2">
+                <p>Possui estampa?</p>
+                <input type="radio">
+                <label class="m-1" for="yes">Sim</label>
+                <input type="radio">
+                <label class="m-1" for="no">Não</label>
+            </div>
+        </div>
+    </form>
+    <div class="d-flex justify-content-end container-btns">
+        <button class="btn-danger" routerLink="/home/modelos">Cancelar</button>
+        <button class="btn-primary">Salvar</button>
+    </div>
+</main>
