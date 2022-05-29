@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'colecoes/:colecaoId', component: EditarColecaoComponent },
   { path: 'modelos', component: ModelosComponent },
   { path: 'cadastrarModelos',component: CadastrarModeloComponent },
-  { path: 'editarModelos', component: EditarModeloComponent }
+  { path: 'modelos/:modeloId', component: EditarModeloComponent }
 ]
 
 @NgModule({
