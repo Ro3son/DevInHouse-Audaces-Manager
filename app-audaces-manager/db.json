@@ -29,6 +29,12 @@
       "nome": "Modelo 5",
       "colecao": "Coleção 5",
       "responsavel": "Robson"
+    },
+    {
+      "id": 6,
+      "nome": "Coleção 6",
+      "colecao": "bermuda",
+      "responsavel": "Braulina"
     }
   ],
   "colecoes": [
