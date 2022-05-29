@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Modelos } from 'src/app/classes/modelos';
+import { ModeloService } from 'src/app/services/modelo.service';
 
 @Component({
   selector: 'app-modelos',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModelosComponent implements OnInit {
 
-  constructor() { }
+  public modelo: Modelos[] = [];
 
-  ngOnInit(): void {
+  constructor(private modeloService: ModeloService) { }
+
+  ngOnInit() { this.getDataModelos() }
+
+  public getDataModelos() {
+    this.modeloService.getModelos().subscribe((dados) => {
+      this.modelo = dados;
+      console.log(this.modelo);
+    });
   }
 
 }
